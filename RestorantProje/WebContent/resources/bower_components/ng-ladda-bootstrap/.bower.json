@@ -1,0 +1,38 @@
+{
+  "name": "ng-ladda-bootstrap",
+  "version": "0.1.0",
+  "authors": [
+    "Ramón Roche <mrpollo@gmail.com>"
+  ],
+  "description": "ladda-bootstrap button directives for AngularJS",
+  "main": "dist/ng-ladda-bootstrap.js",
+  "keywords": [
+    "ladda",
+    "ladda-bootstrap",
+    "angularjs",
+    "directive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ladda-bootstrap": "~0.1.0",
+    "angular": ">=1.2"
+  },
+  "homepage": "https://github.com/mrpollo/ng-ladda-bootstrap",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "f7167d412e4e6cd9164195e16c08ce8fa0bd9882"
+  },
+  "_source": "https://github.com/mrpollo/ng-ladda-bootstrap.git",
+  "_target": "~0.1.0",
+  "_originalSource": "ng-ladda-bootstrap"
+}
