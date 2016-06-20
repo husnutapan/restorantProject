@@ -28,6 +28,7 @@
 .email.ng-dirty.ng-invalid-email {
 	background-color: yellow;
 }
+
 </style>
 <link href="<c:url value='resources/css/app.css' />" rel="stylesheet"></link>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
