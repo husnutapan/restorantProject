@@ -32,9 +32,9 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 		messageSource.setBasename("messages");
 		return messageSource;
 	}
-	
+	   
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		 registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+		 registry.addResourceHandler("/resources/**").addResourceLocations("/resources/" );
 	}
 }
