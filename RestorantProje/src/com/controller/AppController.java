@@ -3,7 +3,6 @@ package com.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.MessageSource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,10 +21,7 @@ import com.service.EmployeeService;
 public class AppController {
 
 	@Autowired
-	EmployeeService employeeService;
-
-	@Autowired
-	MessageSource messageSource;
+	private EmployeeService employeeService;
 
 	@RequestMapping(value = "/user/", method = RequestMethod.GET)
 	public ResponseEntity<List<Employee>> listAllUsers() {
