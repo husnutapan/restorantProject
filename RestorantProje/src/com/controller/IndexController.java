@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class IndexController {
 
-	  @RequestMapping(method = RequestMethod.GET)
-	    public String getIndexPage() {
-	        return "masalarPage";
-	    }
+	@RequestMapping(method = RequestMethod.GET)
+	public String getIndexPage() {
+		// return "masalarPage";
+		 return "UserManagement";
+//		return "menu1";
+	}
 
 }

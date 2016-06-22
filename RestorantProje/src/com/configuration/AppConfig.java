@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 
 @Configuration
 @EnableWebMvc
@@ -23,7 +24,17 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
-
+	
+	@Bean
+	public TilesConfigurer getTilesConfigurer(){
+		TilesConfigurer tilesConfigurer = new TilesConfigurer();
+		tilesConfigurer.setDefinitions(new String[]{
+				"/WEB-INF/tiles/layouts/layout.definitions.xml",
+				"/WEB-INF/tiles/views/view.definitions.xml"
+		});
+		tilesConfigurer.setCheckRefresh(true);
+		return tilesConfigurer;
+	}
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {

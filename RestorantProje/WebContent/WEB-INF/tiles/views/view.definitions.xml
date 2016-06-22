@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="menu1View" extends="menu1Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myMenu1.jsp" />
+	</definition>
+
+	<definition name="menu2View" extends="menu2Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myMenu2.jsp" />
+	</definition>
+
+	<definition name="page1View" extends="menu1Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myPage1.jsp" />
+	</definition>
+
+	<definition name="page2View" extends="menu1Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myPage2.jsp" />
+	</definition>
+
+	<definition name="page3View" extends="menu1Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myPage3.jsp" />
+	</definition>
+
+	<definition name="page4View" extends="menu2Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myPage4.jsp" />
+	</definition>
+
+	<definition name="page5View" extends="menu2Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myPage5.jsp" />
+	</definition>
+
+	<definition name="page6View" extends="menu2Template">
+		<put-attribute name="body"
+			value="/WEB-INF/view/tilesViews/page/myPage6.jsp" />
+	</definition>
+
+</tiles-definitions>

@@ -22,20 +22,21 @@
 			<tbody>
 				<tr ng-repeat="masa in masaCtrl.masalar">
 					<td><span ng-bind="masa.name"></span></td>
+					<td>
+						<div class="img">
+							<img src="resources/images/restrorant_online.jpg">
+						</div>
+					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 
 
-	<div class="img">
-		<img src="resources/images/restrorant_online.jpg">
-	</div>
-</body>
 
+</body>
 <script type="text/javascript"
 	src="<c:url value='resources/bower_components/angular/angular.js'/>"></script>
-
 <script type="text/javascript"
 	src="<c:url value='resources/js/app.js'/>"></script>
 <script type="text/javascript"
