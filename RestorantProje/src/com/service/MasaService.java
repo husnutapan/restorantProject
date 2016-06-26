@@ -13,4 +13,5 @@ public interface MasaService {
 	public void updateEmployeeById(Masa masa, int id);
 
 	public void deleteMasa(long id);
+	
 }

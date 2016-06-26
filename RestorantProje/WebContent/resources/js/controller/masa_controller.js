@@ -9,7 +9,21 @@ App.controller('MasaController', [ '$scope', 'MasaService', 'ngDialog',
 				isOnline : false
 			};
 
+			self.siparis = {
+				id : null,
+				corba : '',
+				yemek : '',
+				tatli : '',
+				masaId : null
+			};
+
 			self.masalar = [];
+
+			self.getSiparisByMasaId = function() {
+				MasaService.getSiparisByMasaId().then(function(d) {
+					self.siparis = d;
+				})
+			};
 
 			self.fetchAllMasa = function() {
 				MasaService.fetchAllMasa().then(function(d) {
@@ -20,6 +34,7 @@ App.controller('MasaController', [ '$scope', 'MasaService', 'ngDialog',
 			};
 
 			self.sendDataToDialog = function sendDataToDialog(masa) {
+				console.log(masa);
 				ngDialog.openConfirm({
 					template : 'resources/html/corba.html',
 					className : 'ngdialog-theme-default',
@@ -31,7 +46,8 @@ App.controller('MasaController', [ '$scope', 'MasaService', 'ngDialog',
 					ngDialog.openConfirm({
 						template : 'resources/html/yemek.html',
 						className : 'ngdialog-theme-default',
-						showClose : false
+						showClose : false,
+
 					}).then(function(value) {
 
 						ngDialog.close('yemek');
