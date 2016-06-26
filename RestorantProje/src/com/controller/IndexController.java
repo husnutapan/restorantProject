@@ -10,9 +10,10 @@ public class IndexController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String getIndexPage() {
-		// return "masalarPage";
-		 return "UserManagement";
+		 return "masalarPage";
+//		 return "UserManagement";
 //		return "menu1";
+	
 	}
 
 }

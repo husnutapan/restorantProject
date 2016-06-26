@@ -11,8 +11,11 @@ import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 @Entity
 @Table(name = "MASA")
+@Component
 public class Masa {
 
 	@Id

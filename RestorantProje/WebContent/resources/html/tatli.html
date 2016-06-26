@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/controller/masa_controller.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="MasaController as masaCtrl">
+	<form name="corbaForm" id="corba">
+		<img src="/RestorantProje/resources/images/tatli.jpg" width="100" height="100">
+		<input type="text" value="DB den gelecek" readonly="true">
+		<button type="button" ng-disabled="masaCtrl.$invalid"
+			ng-click="confirm()" class="btn btn-success pull-right">İleri</button>
+		<button type="button" ng-click="closeThisDialog('yemek')"
+			class="btn btn-success pull-left">İptal</button>
+	</form>
+	</div>
+</body>
+</html>

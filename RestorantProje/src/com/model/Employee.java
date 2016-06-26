@@ -14,9 +14,11 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name = "EMPLOYEE")
+@Component
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
